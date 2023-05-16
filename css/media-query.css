@@ -4,16 +4,11 @@
 }
 .img-background {
     width: 100%;
-    /*vh...View Height */
     height: 100vh;
     background-image: url("/img/playa_1600x1066.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     position: fixed;
-}
-.img-logo {
-    float: left;
-    cursor: pointer;
 }
 .barra-nav {
     width: 100%;
@@ -21,11 +16,15 @@
     position: absolute;
     display: flex;
     justify-content: center;
+    top: 0;
+}
+.img-logo {
+    float: left;
+    margin-left: 30px;
 }
 .main-nav {
     width: 1150px;
     height: 100px;
-    position: absolute;
 }
 .main-menu {
     text-align: center ;
@@ -50,5 +49,9 @@ a:hover {
 @media only screen and (max-width: 1300px) {
     .main-menu {
         display: none;
+    }
+    .img-background {
+        background-image: url(../img/playa2_mq.PNG);
+        background-size: cover;
     }
 }
