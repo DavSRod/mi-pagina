@@ -18,12 +18,15 @@
     justify-content: center;
     top: 0;
 }
+.logo-hamburguer {
+    display: none;
+}
 .img-logo {
     float: left;
     margin-left: 30px;
 }
 .main-nav {
-    width: 1150px;
+    width: 1250px;
     height: 100px;
 }
 .main-menu {
@@ -31,27 +34,55 @@
     line-height: 50px;
 }
 .item-menu {
-    padding-bottom: 5px;
-}
-li {
     display: inline-block;
-    margin: 20px 25px;
+    padding: 20px 25px;
     font-family: sans-serif;
     font-size: 1.5em;
+    padding-bottom: 5px;
 }
 a {
     text-decoration: none;
     color: white;
 }
-a:hover {
-    border-bottom: 3px solid white;
-}
 @media only screen and (max-width: 1300px) {
     .main-menu {
         display: none;
     }
+    .main-menu-block {
+        display: block;
+        background-color: rgb(64, 64, 64, .8);
+        margin-top: 85px;
+        padding-top: 1px;
+        height: 100vh;
+        font-size: 0.9em;
+    }
+    .item-menu {
+        display: block;
+        padding-bottom: 15px;
+        border-bottom: 1px solid rgb(220, 220, 220, .7);
+        text-align: center;
+    }
+    .item-menu:hover {
+        cursor: pointer;
+        background-color: rgb(200, 200, 200, .5);
+    }
+    a {
+        color: white;
+    }
     .img-background {
         background-image: url(../img/playa3_mq.PNG);
         background-size: cover;
+    }
+    .logo-hamburguer {
+        display: block;
+        position: absolute;
+        font-size: 2.5em;
+        top: 15px;
+        right: 25px;
+        color: rgb(24, 24, 24);
+        padding-top: 10px;
+    }
+    .logo-hamburguer:hover {
+        cursor: pointer;
     }
 }
