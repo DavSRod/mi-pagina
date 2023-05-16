@@ -1,4 +1,3 @@
-alert("Jhoser perra en calor")
 let logoHamburguer = document.getElementById("logoHamburguer");
 let mainMenu = document.getElementById("mainMenu");
 
