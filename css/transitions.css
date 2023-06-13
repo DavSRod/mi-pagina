@@ -1,3 +1,14 @@
+body {
+    background-color: antiquewhite;
+}
+h1 {
+    text-align: center;
+    color: red;
+}
+h2 {
+    color: forestgreen;
+    font-weight: 900;
+}
 .box-1 {
     width: 300px;
     height: 300px;
