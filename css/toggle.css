@@ -1,71 +1,79 @@
-* {
+*{
     margin: 0;
     padding: 0;
 }
-.main-content-dark {
-    width: 100%;
-}
-.box-toggle-off {
-    width: 130px;
+.box_4_1{
+    position: relative;
+    width: 190px;
     height: 70px;
-    border-radius: 30px;
-    background-color: rgb(64, 64, 64);
-    transition: background-color 1s;
+    border-radius: 70px;
+    z-index: 20;
 }
-.box-toggle-on {
-    width: 180px;
-    height: 70px;
-    border-radius: 30px;
-    background-color: rgb(15, 181, 12);
-}
-.toggle-off {
-    width: 60px;
-    height: 60px;
-    background-color: white;
-    border-radius: 35px;
-    position: relative;
-    left: 85px;
-    top: -20px;
-}
-.toggle-on {
-    width: 60px;
-    height: 60px;
-    background-color: white;
-    border-radius: 35px;
-    position: relative;
-    left: 65px;
-    top: -20px;
-    transition: all 600ms;
-}
-.indicator-on {
-    color: white;
-    font-size: 1.5em;
-    top: 20px;
-    left: 10px;
-}
-.indicator-off {
-    display: inline-block;
-    color: white;
-    font-size: 1.5em;
-    position: relative;
-    top: 20px;
-    left: 35px;
-}
-.box-toggle-off:hover, .box-toggle-on:hover {
+.box_4_1:hover{
     cursor: pointer;
 }
-.box-texto {
-    display: flex;
-    justify-content: center;
+.main-box-off{
+    background-color: rgb(64,64,64);
+    transition: background-color 800ms;
+    margin-top: 50px;
 }
-.texto-dark {
+.main-box-on {
+    background-color: rgb(3, 116, 219);
+    transition: background-color 800s;
+    margin-top: 50px;
+}
+.contenedor-2{
+    position: relative;
+    top: -25px;
+    left: 120px;
+    width: 60px;
+    height: 60px;
+    background-color:whitesmoke;
+    border-radius: 55px;
+    transition: all 1s;
+    z-index: 10
+}
+.contenedor-1{
+    position: relative;
+    top: -25px;
+    left: 10px;
+    width: 60px;
+    height: 60px;
+    background-color:whitesmoke;
+    border-radius: 55px;
+    transition: all 1s;
+    z-index: 11;
+}
+.text-on, .text-off {
+    position: relative;
+    font-size: 1.6em;
+    left: 10px;
+    top: 20px;
+    color: white;
+    z-index: 5;
+}
+.text-off{
+    left: 80px;
+}
+.texto-dark{
     width: 80%;
     line-height: 1.4em;
     font-size: 1.2em;
-    
-} {
+    text-align: justify;
+    color: black;
+}
+.texto-claro{
     width: 80%;
     line-height: 1.4em;
     font-size: 1.2em;
-
+    text-align: justify;
+    color: white;
+}
+.main-content-dark{
+    width: 100%;
+    background-color: rgb(24, 24,24);
+}
+.main-content-light{
+    width: 100%;
+    background-color: rgb(255, 255, 255);
 }

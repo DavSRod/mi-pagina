@@ -1,17 +1,28 @@
-let boxToggle = document.getElementById("boxToggle");
-let toggle = document.getElementById("toggle");
+let movimiento=document.getElementById("movimiento");
+let content=document.getElementById("content");
+let maincontent=document.getElementById("maincontent");
+let textparagrath=document.getElementById("textparagrath");
 
-boxToggle.addEventListener("click", function() {
-    if (toggle.classList.contains("toggle-off")) {
-        toggle.classList.add("toggle-on");
-        toggle.classList.remove("toggle-off");
-        boxToggle.classList.add("box-toggle-on");
-        boxToggle.classList.remove("box-toggle-off");
+movimiento.addEventListener("click", function(){
+    if(content.classList.contains("contenedor-1")){
+        content.classList.add("contenedor-2");
+        content.classList.remove("contenedor-1");
+        movimiento.classList.add("main-box-on");
+        movimiento.classList.remove("main-box-off");
+        maincontent.classList.add("main-content-dark");
+        maincontent.classList.remove("main-content-light");
+        textparagrath.classList.add("texto-claro");
+        textparagrath.classList.remove("texto-dark");
     }
-    else {
-        toggle.classList.remove("toggle-on");
-        toggle.classList.add("toggle-off");
-        boxToggle.classList.remove("box-toggle-on");
-        boxToggle.classList.add("box-toggle-off");
+    else{
+        content.classList.remove("contenedor-2");
+        content.classList.add("contenedor-1");
+        movimiento.classList.remove("main-box-on");
+        movimiento.classList.add("main-box-off");
+        maincontent.classList.remove("main-content-dark");
+        maincontent.classList.add("main-content-light");
+        textparagrath.classList.remove("texto-claro");
+        textparagrath.classList.add("texto-dark");
+
     }
-});
+})
