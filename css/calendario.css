@@ -75,3 +75,21 @@ h1 {
     grid-row-end: 6;
     height: 100%;
 }
+.dia-mes {
+    font-size: 0.7em;
+    position: relative;
+    top: -40px;
+    left: 45px;
+}
+.dia-mes-navidad {
+    font-size: 0.7em;
+    position: relative;
+    top: -40px;
+    left: 70px;
+}
+.texto-dia {
+    font-size: 0.6em;
+    position: relative;
+    top: 40px;
+    left: 10px;
+}
